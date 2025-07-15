@@ -1,0 +1,228 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.62\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 2,
+      "filters": "[]",
+      "height": 1400.00,
+      "name": "0754305e0c1e8957398c",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"17abe66aa9d601ddc578\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1.25,\"y\":557.2500002384186,\"z\":7000,\"width\":775,\"height\":356.25,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(PickleBallData.TotalAmount)\"}],\"Category\":[{\"queryRef\":\"PickleBallData.DayName\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0},\"Name\":\"Sum(PickleBallData.TotalAmount)\",\"NativeReferenceName\":\"Sum of TotalAmount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"DayName\"},\"Name\":\"PickleBallData.DayName\",\"NativeReferenceName\":\"DayName\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 356.25,
+          "width": 775.00,
+          "x": 1.25,
+          "y": 557.25,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"42844bf401c2edc2ce83\",\"layouts\":[{\"id\":0,\"position\":{\"x\":181.44194617161912,\"y\":1.564154708376027,\"z\":1000,\"width\":309.7026322584533,\"height\":125.13237667008215,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(PickleBallData.TotalAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0},\"Name\":\"Sum(PickleBallData.TotalAmount)\",\"NativeReferenceName\":\"Total Booking Amount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(PickleBallData.TotalAmount)\":{\"displayName\":\"Total Booking Amount\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"37D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 125.13,
+          "width": 309.70,
+          "x": 181.44,
+          "y": 1.56,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"46517b34f983aad98229\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776.4949551375797,\"y\":0,\"z\":3000,\"width\":240.24886646137082,\"height\":126.09747134712833,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(PickleBallData.CLUB)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"CLUB\"}},\"Function\":2},\"Name\":\"Min(PickleBallData.CLUB)\",\"NativeReferenceName\":\"Total Clubs\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"CLUB\"}},\"Function\":2}}}]},\"columnProperties\":{\"Min(PickleBallData.CLUB)\":{\"displayName\":\"Total Clubs\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"37D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 126.10,
+          "width": 240.25,
+          "x": 776.49,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"63e598ea8fe5fd7ac647\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":5000,\"width\":211.16088563076363,\"height\":126.69653137845819,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"PickleBallData.day_type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"day_type\"},\"Name\":\"PickleBallData.day_type\",\"NativeReferenceName\":\"day_type\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Day'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 126.70,
+          "width": 211.16,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"6f499497f38cc2c3bb22\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776.25,\"y\":557.2500002384186,\"z\":8000,\"width\":503.75,\"height\":377.5,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"PickleBallData.Device_Type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(PickleBallData.TotalAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0},\"Name\":\"Sum(PickleBallData.TotalAmount)\",\"NativeReferenceName\":\"Sum of TotalAmount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Device_Type\"},\"Name\":\"PickleBallData.Device_Type\",\"NativeReferenceName\":\"Device_Type\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Device Type'\"}}}}}],\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Category, percent of total'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Device Type V/S Booking'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 377.50,
+          "width": 503.75,
+          "x": 776.25,
+          "y": 557.25,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"746f1b60113b2d230613\",\"layouts\":[{\"id\":0,\"position\":{\"x\":503.0625435848593,\"y\":0,\"z\":2000,\"width\":249.54025908694868,\"height\":126.09747134712833,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(PickleBallData.Id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Id\"}},\"Function\":2},\"Name\":\"Min(PickleBallData.Id)\",\"NativeReferenceName\":\"Count of Id\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Id\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"37D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 126.10,
+          "width": 249.54,
+          "x": 503.06,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"8cad6f59299050049cd5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776.25,\"y\":155,\"z\":0,\"width\":503.75,\"height\":377.5,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"PickleBallData.Slot_TimeCategory\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(PickleBallData.TotalAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Slot_TimeCategory\"},\"Name\":\"PickleBallData.Slot_TimeCategory\",\"NativeReferenceName\":\"Slot_TimeCategory\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":5},\"Name\":\"Sum(PickleBallData.TotalAmount)\",\"NativeReferenceName\":\"Count of TotalAmount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Booked Slots'\"}}}}}],\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Category, percent of total'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"PickleBallData\"}},\"Property\":\"Slot_TimeCategory\"}},\"Right\":{\"Literal\":{\"Value\":\"'Night'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"PickleBallData\"}},\"Property\":\"Slot_TimeCategory\"}},\"Right\":{\"Literal\":{\"Value\":\"'Early Morning'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"PickleBallData\"}},\"Property\":\"Slot_TimeCategory\"}},\"Right\":{\"Literal\":{\"Value\":\"'Evening'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Booking Slots V/S Amount'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 377.50,
+          "width": 503.75,
+          "x": 776.25,
+          "y": 155.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a73a07c705bc7ad3ce06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1.6319591163562432,\"y\":923.6888598576337,\"z\":9000,\"width\":1277.8239881069385,\"height\":429.205247601692,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"PickleBallData.BookedDate.Variation.Date Hierarchy.Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(PickleBallData.Id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"BookedDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"PickleBallData.BookedDate.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"BookedDate Month\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Id\"}},\"Function\":2},\"Name\":\"CountNonNull(PickleBallData.Id)\",\"NativeReferenceName\":\"Count of Id1\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 429.21,
+          "width": 1277.82,
+          "x": 1.63,
+          "y": 923.69,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"b9b822eb7cf6406e92f4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1.25,\"y\":153.75,\"z\":6000,\"width\":775,\"height\":378.75,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"PickleBallData.CLUB\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(PickleBallData.TotalAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"CLUB\"},\"Name\":\"PickleBallData.CLUB\",\"NativeReferenceName\":\"CLUB\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0},\"Name\":\"Sum(PickleBallData.TotalAmount)\",\"NativeReferenceName\":\"Sum of TotalAmount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"708956a15dcf3f407da2\",\"filter\":{\"Version\":2,\"From\":[],\"Where\":[{\"Condition\":{\"VisualTopN\":{\"ItemCount\":10}}}]},\"type\":\"VisualTopN\",\"howCreated\":1}]",
+          "height": 378.75,
+          "width": 775.00,
+          "x": 1.25,
+          "y": 153.75,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"bd0a5737b71f7a929b89\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1000.8157199551027,\"y\":0,\"z\":4000,\"width\":280.06912057099026,\"height\":126.09747134712833,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(PickleBallData.NAME)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"NAME\"}},\"Function\":2},\"Name\":\"Min(PickleBallData.NAME)\",\"NativeReferenceName\":\"Total Users\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"NAME\"}},\"Function\":2}}}]},\"columnProperties\":{\"Min(PickleBallData.NAME)\":{\"displayName\":\"Total Users\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"37D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 126.10,
+          "width": 280.07,
+          "x": 1000.82,
+          "y": 0.00,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"d4b205df1eed44f18599\",\"target\":\"81290451b81236af9c7b\",\"type\":3}]}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "1c4881f8faab0db2ea0c",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4961fba0d14d3de1a166\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1.25,\"y\":363.75,\"z\":0,\"width\":775,\"height\":356.25,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"PickleBallData.DayName\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(PickleBallData.TotalAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"DayName\"},\"Name\":\"PickleBallData.DayName\",\"NativeReferenceName\":\"DayName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0},\"Name\":\"Sum(PickleBallData.TotalAmount)\",\"NativeReferenceName\":\"Sum of TotalAmount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 356.25,
+          "width": 775.00,
+          "x": 1.25,
+          "y": 363.75,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"81290451b81236af9c7b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":940.7716635041113,\"y\":0,\"z\":3000,\"width\":294.69955724225173,\"height\":263.93421884882986,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(PickleBallData.TotalAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0},\"Name\":\"Sum(PickleBallData.TotalAmount)\",\"NativeReferenceName\":\"Sum of TotalAmount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 263.93,
+          "width": 294.70,
+          "x": 940.77,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"d4b205df1eed44f18599\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.573055028463,\"y\":0,\"z\":1000,\"width\":812.8526249209361,\"height\":348.13409234661606,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"PickleBallData.DayName\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(PickleBallData.Id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"DayName\"},\"Name\":\"PickleBallData.DayName\",\"NativeReferenceName\":\"DayName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Id\"}},\"Function\":5},\"Name\":\"CountNonNull(PickleBallData.Id)\",\"NativeReferenceName\":\"Id\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Booked Slots'\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"PickleBallData\"}},\"Property\":\"Slot_TimeCategory\"}},\"Right\":{\"Literal\":{\"Value\":\"'Night'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"PickleBallData\"}},\"Property\":\"Slot_TimeCategory\"}},\"Right\":{\"Literal\":{\"Value\":\"'Early Morning'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"PickleBallData\"}},\"Property\":\"Slot_TimeCategory\"}},\"Right\":{\"Literal\":{\"Value\":\"'Evening'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Booking Slots V/S Amount'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 348.13,
+          "width": 812.85,
+          "x": 14.57,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"fadc2df97b6d2afbc0f7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":940.7716635041113,\"y\":364.32637571157494,\"z\":2000,\"width\":294.69955724225173,\"height\":356.2302340290955,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"PickleBallData.CLUB\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"CLUB\"},\"Name\":\"PickleBallData.CLUB\",\"NativeReferenceName\":\"CLUB\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"CLUB\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Pickle Rush'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 356.23,
+          "width": 294.70,
+          "x": 940.77,
+          "y": 364.33,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 3",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "51b722041f4fd6c9c982",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"41f2936f913c3c036215\",\"layouts\":[{\"id\":0,\"position\":{\"x\":45.33839342188489,\"y\":375.6609740670462,\"z\":1000,\"width\":380.5186590765339,\"height\":288.2226438962682,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(PickleBallData.TotalHours)\"}],\"Category\":[{\"queryRef\":\"PickleBallData.BookedDate\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalHours\"}},\"Function\":0},\"Name\":\"Sum(PickleBallData.TotalHours)\",\"NativeReferenceName\":\"Sum of TotalHours\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"BookedDate\"},\"Name\":\"PickleBallData.BookedDate\",\"NativeReferenceName\":\"BookedDate\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"BookedDate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 288.22,
+          "width": 380.52,
+          "x": 45.34,
+          "y": 375.66,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"9049cf7cf5b56177d340\",\"layouts\":[{\"id\":0,\"position\":{\"x\":557.0145477545857,\"y\":388.6148007590133,\"z\":3000,\"width\":723.7950664136623,\"height\":288.2226438962682,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(PickleBallData.TotalAmount)\"}],\"Category\":[{\"queryRef\":\"PickleBallData.BookedDate.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"PickleBallData.BookedDate.Variation.Date Hierarchy.Quarter\",\"active\":true},{\"queryRef\":\"PickleBallData.BookedDate.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"PickleBallData.BookedDate.Variation.Date Hierarchy.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0},\"Name\":\"Sum(PickleBallData.TotalAmount)\",\"NativeReferenceName\":\"Sum of TotalAmount\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"BookedDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"PickleBallData.BookedDate.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"BookedDate Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"BookedDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"PickleBallData.BookedDate.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"BookedDate Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"BookedDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"PickleBallData.BookedDate.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"BookedDate Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"BookedDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"PickleBallData.BookedDate.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"BookedDate Day\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 288.22,
+          "width": 723.80,
+          "x": 557.01,
+          "y": 388.61,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"b1eb4b4d35ca0ddcdadd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":971.5370018975333,\"y\":27.526881720430108,\"z\":2000,\"width\":297.9380139152435,\"height\":228.3111954459203,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"PickleBallData.CLUB\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"CLUB\"},\"Name\":\"PickleBallData.CLUB\",\"NativeReferenceName\":\"CLUB\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"CLUB\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Pickle Play-1'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 228.31,
+          "width": 297.94,
+          "x": 971.54,
+          "y": 27.53,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"e2c153ca87c912a0fc30\",\"layouts\":[{\"id\":0,\"position\":{\"x\":613.6875395319419,\"y\":27.526881720430108,\"z\":4000,\"width\":260.69576217583807,\"height\":192.68817204301075,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(PickleBallData.TotalAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0},\"Name\":\"Sum(PickleBallData.TotalAmount)\",\"NativeReferenceName\":\"Sum of TotalAmount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"TotalAmount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 192.69,
+          "width": 260.70,
+          "x": 613.69,
+          "y": 27.53,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f105f1e6b56852cd51b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.729793930755983,\"y\":0,\"z\":0,\"width\":454.0570501019459,\"height\":285.40728863550885,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"PickleBallData.CLUB\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(PickleBallData.HourCharge)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"CLUB\"},\"Name\":\"PickleBallData.CLUB\",\"NativeReferenceName\":\"CLUB\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"HourCharge\"}},\"Function\":1},\"Name\":\"Sum(PickleBallData.HourCharge)\",\"NativeReferenceName\":\"Average of HourCharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"HourCharge\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"PickleBallData\"}},\"Property\":\"CLUB\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"CLUB\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"CLUB\"}},\"Function\":3}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"p\",\"Entity\":\"PickleBallData\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"CLUB\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 285.41,
+          "width": 454.06,
+          "x": 9.73,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

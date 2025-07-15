@@ -1,0 +1,262 @@
+table PickleBallData
+	lineageTag: 88966cfa-a86b-4abd-ad76-9f30cda26ae5
+
+	column TransactionDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c6b1fea6-46fb-4edf-ace4-5bd7ed559878
+		summarizeBy: none
+		sourceColumn: TransactionDate
+
+		variation Variation
+			isDefault
+			relationship: 94d549c1-58b3-4838-af66-30c0997e4e69
+			defaultHierarchy: LocalDateTable_26e636cf-dadc-449a-8963-23ed326ea808.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column TransactionTime
+		dataType: string
+		lineageTag: 64e6ddde-de06-42b4-abb4-a19886f5dbfd
+		summarizeBy: none
+		sourceColumn: TransactionTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayName
+		dataType: string
+		lineageTag: 30e278cc-c1ef-41c2-8c0b-c25cf92c7bf9
+		summarizeBy: none
+		sourceColumn: DayName
+
+		annotation SummarizationSetBy = Automatic
+
+	column day_type
+		dataType: string
+		lineageTag: f77a06c6-fe8b-4e0e-8197-802b73356023
+		summarizeBy: none
+		sourceColumn: day_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column BookedDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2da305e2-d1f5-4a46-b4d9-07b74b3bd86f
+		summarizeBy: none
+		sourceColumn: BookedDate
+
+		variation Variation
+			isDefault
+			relationship: c5320d00-0ea4-4292-aec1-d043bf803a62
+			defaultHierarchy: LocalDateTable_ac9d911d-2f89-4857-9ebb-672ddd690a6b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column BookedSlot
+		dataType: string
+		lineageTag: f08335cc-e2f9-4974-9b41-7176130ece30
+		summarizeBy: none
+		sourceColumn: BookedSlot
+
+		annotation SummarizationSetBy = Automatic
+
+	column Slot_TimeCategory
+		dataType: string
+		lineageTag: f00274fa-d3ee-4481-8a74-b98175092dfc
+		summarizeBy: none
+		sourceColumn: Slot_TimeCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column Court_count
+		dataType: int64
+		formatString: 0
+		lineageTag: 43a5f2bf-0ed6-499c-9b4e-98e10cd62953
+		summarizeBy: sum
+		sourceColumn: Court_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column CourtType
+		dataType: string
+		lineageTag: 6c2a3231-e23a-403c-a5c5-14d082a019c6
+		summarizeBy: none
+		sourceColumn: CourtType
+
+		annotation SummarizationSetBy = Automatic
+
+	column MOBILE
+		dataType: int64
+		formatString: 0
+		lineageTag: a3c370f1-be7e-4ec9-9d1e-ad11fe910327
+		summarizeBy: sum
+		sourceColumn: MOBILE
+
+		annotation SummarizationSetBy = Automatic
+
+	column NAME
+		dataType: string
+		lineageTag: 33f1edf2-9bde-4102-b6df-a86abc5569e4
+		summarizeBy: none
+		sourceColumn: NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMAIL
+		dataType: string
+		lineageTag: 33c4210a-2299-49bb-acf9-497feea9c00c
+		summarizeBy: none
+		sourceColumn: EMAIL
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalAmount
+		dataType: int64
+		formatString: 0
+		lineageTag: 823ce42e-14c6-4894-ab20-4c9a9fe7fd6c
+		summarizeBy: sum
+		sourceColumn: TotalAmount
+
+		annotation SummarizationSetBy = Automatic
+
+	column AdvancePaid
+		dataType: int64
+		formatString: 0
+		lineageTag: e2a939a7-d81a-4208-ab53-4628638ac1bd
+		summarizeBy: sum
+		sourceColumn: AdvancePaid
+
+		annotation SummarizationSetBy = Automatic
+
+	column VenuePaid
+		dataType: int64
+		formatString: 0
+		lineageTag: 0bae5563-5811-42fa-8830-85c4313c36c2
+		summarizeBy: sum
+		sourceColumn: VenuePaid
+
+		annotation SummarizationSetBy = Automatic
+
+	column KARMA
+		dataType: int64
+		formatString: 0
+		lineageTag: e4427b29-4efd-43f2-a950-fa58457a2512
+		summarizeBy: sum
+		sourceColumn: KARMA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CREDITS
+		dataType: double
+		formatString: 0
+		lineageTag: 081e8418-0bc0-4ac6-98b4-d53528fdba71
+		summarizeBy: sum
+		sourceColumn: CREDITS
+
+		annotation SummarizationSetBy = Automatic
+
+	column C_FEE
+		dataType: double
+		lineageTag: 97a63320-fbc4-419d-bae1-5d8bde4c9b42
+		summarizeBy: sum
+		sourceColumn: C_FEE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CLUB
+		dataType: string
+		lineageTag: 07e04d4a-1615-4450-b9d5-7a59431c465d
+		summarizeBy: none
+		sourceColumn: CLUB
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOURCE
+		dataType: string
+		lineageTag: 8bc27c20-74b5-43db-94d7-b73fed941ef8
+		summarizeBy: none
+		sourceColumn: SOURCE
+
+		annotation SummarizationSetBy = Automatic
+
+	column Device_Type
+		dataType: string
+		lineageTag: 46f41a5e-ac54-4f37-97a2-1715e6ae0586
+		summarizeBy: none
+		sourceColumn: Device_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type
+		dataType: string
+		lineageTag: b5be70cf-a2ec-4c6e-aaf2-89ecf441ce47
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column F_FEE
+		dataType: int64
+		formatString: 0
+		lineageTag: 284fd365-95b7-4bf0-9e39-0daa12df43b7
+		summarizeBy: sum
+		sourceColumn: F_FEE
+
+		annotation SummarizationSetBy = Automatic
+
+	column Area
+		dataType: string
+		lineageTag: 8915e84b-66ae-4840-94a3-cc1423f12743
+		summarizeBy: none
+		sourceColumn: Area
+
+		annotation SummarizationSetBy = Automatic
+
+	column Id
+		dataType: string
+		lineageTag: 9c7d15aa-5903-42b0-a9fb-19e4faeff299
+		summarizeBy: none
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalHours
+		dataType: double
+		lineageTag: b12f6296-77d4-4cc5-8234-ea6203ef46ae
+		summarizeBy: sum
+		sourceColumn: TotalHours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HourCharge
+		dataType: double
+		lineageTag: 1ed36f32-23a2-46e5-ad89-35a7f7017cb2
+		summarizeBy: sum
+		sourceColumn: HourCharge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition PickleBallData = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost\SQLEXPRESS", "PickleBallDB"),
+				    dbo_PickleBallData = Source{[Schema="dbo",Item="PickleBallData"]}[Data]
+				in
+				    dbo_PickleBallData
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

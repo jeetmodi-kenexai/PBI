@@ -1,0 +1,23 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["PickleBallData"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.144.1155.0 (25.06)+46435b07013d2a234d7fd007083a9e70b8e79f1c
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table PickleBallData
+ref table DateTableTemplate_eaab1091-3016-4f51-ad3a-bd6704357c5f
+ref table LocalDateTable_ac9d911d-2f89-4857-9ebb-672ddd690a6b
+ref table LocalDateTable_26e636cf-dadc-449a-8963-23ed326ea808
+
+ref cultureInfo en-US
+

@@ -1,0 +1,10 @@
+relationship c5320d00-0ea4-4292-aec1-d043bf803a62
+	joinOnDateBehavior: datePartOnly
+	fromColumn: PickleBallData.BookedDate
+	toColumn: LocalDateTable_ac9d911d-2f89-4857-9ebb-672ddd690a6b.Date
+
+relationship 94d549c1-58b3-4838-af66-30c0997e4e69
+	joinOnDateBehavior: datePartOnly
+	fromColumn: PickleBallData.TransactionDate
+	toColumn: LocalDateTable_26e636cf-dadc-449a-8963-23ed326ea808.Date
+
